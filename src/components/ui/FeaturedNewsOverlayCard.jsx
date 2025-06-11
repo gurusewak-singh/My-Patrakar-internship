@@ -1,7 +1,9 @@
+import { Link } from 'react-router-dom';
+
 const FeaturedNewsOverlayCard = ({ article }) => {
   return (
     // The main container needs to be 'relative' to position the text inside it.
-    <a href={article.slug} className="group relative block w-full h-full">
+    <Link to={article.slug} className="group relative block w-full h-full">
       <img
         src={article.imageUrl}
         alt={article.title}
@@ -23,7 +25,7 @@ const FeaturedNewsOverlayCard = ({ article }) => {
           {article.title}
         </h2>
       </div>
-    </a>
+    </Link>
   );
 };
 

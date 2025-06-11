@@ -1,6 +1,8 @@
+import { Link } from 'react-router-dom';
+
 const ListNewsItem = ({ article }) => {
   return (
-    <a href={article.slug} className="group block pb-6 mb-6 last:pb-0 last:mb-0">
+    <Link to={article.slug} className="group block pb-6 mb-6 last:pb-0 last:mb-0">
       <div className="flex flex-col sm:flex-row gap-6 items-start">
         {/* Image Container: Increased width and added more responsive control */}
         <div className="flex-shrink-0 w-full sm:w-1/3 md:w-80">
@@ -10,7 +12,6 @@ const ListNewsItem = ({ article }) => {
             className="w-full h-48 object-cover rounded-lg"
           />
         </div>
-        
         
         {/* Text Content */}
         <div className="flex flex-col">
@@ -30,7 +31,7 @@ const ListNewsItem = ({ article }) => {
           </p>
         </div>
       </div>
-    </a>
+    </Link>
   );
 };
 

@@ -1,6 +1,8 @@
+import { Link } from 'react-router-dom';
+
 const FeaturedNewsCardHorizontal = ({ article }) => {
   return (
-    <a href={article.slug} className="group block">
+    <Link to={article.slug} className="group block">
       <div className="flex flex-col md:flex-row gap-6 items-start">
         {/* Left Side: Image */}
         <div className="w-full md:w-5/12 flex-shrink-0">
@@ -21,7 +23,7 @@ const FeaturedNewsCardHorizontal = ({ article }) => {
           </p>
         </div>
       </div>
-    </a>
+    </Link>
   );
 };
 

@@ -1,6 +1,8 @@
+import { Link } from 'react-router-dom'; // 1. Import Link
+
 const NewsCard = ({ article }) => {
   return (
-    <a href={article.slug} className="group flex items-start gap-4">
+    <Link to={article.slug} className="group flex items-start gap-4">
       {/* Image Container: Make it a consistent size */}
       <div className="flex-shrink-0 w-28 h-20">
         <img 
@@ -16,7 +18,7 @@ const NewsCard = ({ article }) => {
           {article.title}
         </h3>
       </div>
-    </a>
+    </Link>
   );
 };
 
