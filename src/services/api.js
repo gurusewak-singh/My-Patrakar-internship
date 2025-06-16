@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const BASE_URL = 'https://customer.mypatrakar.com/api/v1';
-const IMAGE_BASE_URL = 'https://super-admin.hindtechitsolutions.com';
+const IMAGE_BASE_URL = 'https://customer.mypatrakar.com';
 
 const API_CONFIG = {
   headers: {
